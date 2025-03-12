@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Movimentos Planetários</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">Simulador de Movimentos Planetários</h1>
+    <div id="language-selector">
+      <label for="language">🌐 Idioma:</label>
+      <select id="language">
+        <option value="en">English</option>
+        <option value="pt">Português</option>
+        <option value="es">Español</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <canvas id="solarSystem"></canvas>
+    <div id="controls">
+      <label for="speed">Velocidade: </label>
+      <input id="speed" type="range" min="1" max="10" value="5">
+    </div>
+  </main>
+
+
+  <script src="lang.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
